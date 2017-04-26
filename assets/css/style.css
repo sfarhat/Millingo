@@ -163,17 +163,6 @@ body {
 	font-family: 'Permanent Marker', serif;
 }
 
-.card#netflix-and-chill {
-	position: absolute;
-	top: 0px;
-	right: 42px;
-}
-
-.card#salty {
-	position: absolute;
-	left: 40px;
-}
-
 .card:hover {
 	cursor: pointer;
 	box-shadow: 0 10px 20px rgba(0,0,0,0.5), 0 6px 6px rgba(0,0,0,0.6);
