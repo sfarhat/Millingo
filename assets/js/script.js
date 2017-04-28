@@ -45,4 +45,9 @@ $(document).ready(function() {
 		$('#overlay').fadeOut(300);
 	});
 
+	$('#overlay').click(function() {
+		$('.card-container').fadeOut(300);
+		$('#overlay').fadeOut(300);
+	});
+
 });
