@@ -2,14 +2,19 @@ $(document).ready(function() {
 
 	var numApplicationClicked = 0;
 	$('.check-circle').click(function() {
-		$(this).css('background-color', 'darkseagreen');
-		numApplicationClicked += 1;
+		if ($(this).hasClass('check-circle-clicked')) {
+			$(this).removeClass('check-circle-clicked');
+			numApplicationClicked -= 1;
+		} else {
+			$(this).addClass('check-circle-clicked');
+			numApplicationClicked += 1;
+		}
 
 		if (numApplicationClicked == 3) {
-			$('#end-of-application').hide();
 			$('#end-of-application').text('Ah, perfect! We are here to help.');
-			$('#end-of-application').show();
 			$('html, body').animate({ scrollTop: 300 }, 1500)
+		} else {
+			$('#end-of-application').text('Hm, it seems to me you\'re too young!');
 		}
 	});
 

@@ -105,7 +105,12 @@ body {
 
 .check-circle:hover {
 	cursor: pointer;
-	background-color: yellow;
+	background-color: darkseagreen;
+	opacity: 0.8;
+}
+
+.check-circle-clicked {
+	background-color: darkseagreen;
 }
 
 #end-of-application {
